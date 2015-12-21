@@ -1,0 +1,14 @@
+[
+    {
+	"id": 1,
+	"name": "Takayoshi Aoyagi",
+	"gender": "male",
+	"age": 43,
+	"company": {
+	    "name": "Artista",
+	    "position": "president"
+	},
+	"hobbies": ["Car", "Music", "Taekwon-do"],
+	"married": true
+    }
+]

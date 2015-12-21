@@ -1,0 +1,14 @@
+{
+  "name": "artista-mean",
+  "version": "0.0.0",
+  "description": "MEAN stack generator",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "async": "^1.5.0"
+  }
+}
