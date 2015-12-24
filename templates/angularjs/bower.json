@@ -1,0 +1,25 @@
+{
+    "name": "public",
+    "authors": [
+	""
+    ],
+    "description": "",
+    "main": "",
+    "moduleType": [],
+    "license": "MIT",
+    "homepage": "",
+    "ignore": [
+	"**/.*",
+	"node_modules",
+	"bower_components",
+	"test",
+	"tests"
+    ],
+    "dependencies": {
+	"angular": "angularjs#~1.4.8",
+	"angular-route": "~1.4.8",
+	"angular-resource": "~1.4.8",
+	"bootstrap": "~3.3.6",
+	"angular-ui-layout": "~1.4.1"
+    }
+}
