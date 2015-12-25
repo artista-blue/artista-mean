@@ -73,6 +73,8 @@ Person.json
 
 ```sh
 $ artista-mean /tmp/sample /tmp/json
+$ cd /tmp/sample && npm install
+$ npm start
 ```
 
 * Auto generated Admin page
