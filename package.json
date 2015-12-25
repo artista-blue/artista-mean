@@ -1,6 +1,6 @@
 {
     "name": "artista-mean",
-    "version": "0.0.0",
+    "version": "0.0.1",
     "description": "MEAN stack source code generator",
     "main": "bin/artista-mean",
     "preferGlobal": true,
