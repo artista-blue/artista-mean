@@ -49,13 +49,14 @@ function initModels(infile, ModelObject, callback) {
     });
 }
 
-fs.readdir('./json', function (err, files) {
+var ddlDir = './ddl';
+fs.readdir(ddlDir, function (err, files) {
     files = files.filter(function (str) {
 	var suffix = ".json";
 	return str.indexOf(suffix, str.length - suffix.length) !== -1;
     });
     async.forEach(files, function (file, next) {
-	var jsonPath = path.join('json', file),
+	var jsonPath = path.join(ddlDir, file),
 	    schemaName = file.split('.json')[0];
 	initModels(jsonPath, Model[schemaName], function (err) {
 	    next(err);
