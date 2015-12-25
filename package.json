@@ -1,15 +1,29 @@
 {
-  "name": "artista-mean",
-  "version": "0.0.0",
-  "description": "MEAN stack generator",
-  "main": "main.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "MIT",
-  "dependencies": {
-    "async": "^1.5.0",
-    "mongoose": "^4.3.4"
-  }
+    "name": "artista-mean",
+    "version": "0.0.0",
+    "description": "MEAN stack source code generator",
+    "main": "bin/artista-mean",
+    "preferGlobal": true,
+    "bin": {
+	"artista-mean": "./bin/artista-mean"
+    },
+    "repository": "https://github.com/Takayoshi-Aoyagi/artista-mean",
+    "scripts": {
+	"test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Takayoshi Aoyagi <Takayoshi.Aoyagi@gmail.com>",
+    "keywords": [
+	"mean",
+	"express",
+	"framework",
+	"mongoose",
+	"angularjs",
+	"restful",
+	"app",
+	"automatic programming"
+    ],
+    "license": "MIT",
+    "dependencies": {
+	"async": "^1.5.0"
+    }
 }
