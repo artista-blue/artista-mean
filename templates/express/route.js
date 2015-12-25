@@ -25,15 +25,23 @@ router.post('/', function(req, res) {
     });
 });
 
-router.delete('/', function(req, res) {
-    var model = req.body;
-    model.remove(function (err) {
+router.delete('/:id', function(req, res) {
+    var id = req.body.id;
+    Model.%s.findOne(function (err, model) {
 	if (err) {
-	    console.log(err);
-	    res.status(500).end();
-	} else {
-	    res.status(200).end();
+	    res.status(500).end(); return;
 	}
+	if (!model) {
+	    res.status(200).end(); return;	    
+	}
+	model.remove(function(err) {
+	    if (err) {
+		console.log(err);
+		res.status(500).end();
+	    } else {
+		res.status(200).end();
+	    }
+	});
     });
 });
 
