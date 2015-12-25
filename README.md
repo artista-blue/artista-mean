@@ -74,6 +74,7 @@ Person.json
 ```sh
 $ artista-mean /tmp/sample /tmp/json
 $ cd /tmp/sample && npm install
+$ node import.js
 $ npm start
 ```
 
