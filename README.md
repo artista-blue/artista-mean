@@ -52,7 +52,7 @@ Car.json
 ```
 
 Person.json
-```
+```js
 [
     {
 	"id": 1,
