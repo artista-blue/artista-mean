@@ -1,12 +1,17 @@
+#!/usr/bin/env node
+
 "use strict";
 
-var ArtistaMean = require('./lib/artista-mean');
+var ArtistaMean = require('../lib/artista-mean');
 
 var args = process.argv;
 
 var projectName = args[2],
     jsonDir = args[3],
     project;
+
+console.log(projectName)
+console.log(jsonDir)
 
 project = new ArtistaMean(projectName, jsonDir);
 project.generate();
