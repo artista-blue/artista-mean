@@ -3,6 +3,7 @@
 ## Installation
 
 ```sh
+$ npm install -g express-generator
 $ npm install -g artista-mean
 ```
 
@@ -80,4 +81,4 @@ $ npm start
 
 * Auto generated Admin page
 
-http://localhost:3000/admin.html
+[http://localhost:3000/admin.html](http://localhost:3000/admin.html)
