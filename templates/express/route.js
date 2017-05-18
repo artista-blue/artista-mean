@@ -1,4 +1,5 @@
 var express = require('express');
+var mongodb = require('mongodb');
 var router = express.Router();
 var Model = require('../models/models');
 
@@ -15,7 +16,7 @@ router.get('/', function(req, res) {
 
 router.post('/', function(req, res) {
     var model = req.body;
-    model.save(function (err) {
+    Model.%s.create(model, function (err, _item) {
 	if (err) {
 	    console.log(err);
 	    res.status(500).end();
@@ -25,9 +26,9 @@ router.post('/', function(req, res) {
     });
 });
 
-router.delete('/:id', function(req, res) {
-    var id = req.body.id;
-    Model.%s.findOne(function (err, model) {
+router.delete('/:_id', function(req, res) {
+    var _id = req.params._id;
+    Model.%s.findOne(mongodb.ObjectID(_id), function (err, model) {
 	if (err) {
 	    res.status(500).end(); return;
 	}
