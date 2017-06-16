@@ -1,9 +1,9 @@
-Controllers.controller('Controller', ['$scope', %s, function($scope, %s) {
+Controllers.controller('%sController', ['$scope', '%s', function($scope, %s) {
 
-%s
+    $scope.%s = %s.query();
 
     $scope.delete = function ($index, collection) {
-	var item = collection[$index];
+	const item = collection[$index];
 	collection.splice($index, 1);
 	%s.delete({id: item._id}, function (err) {
             $scope.%s = %s.query();	    
@@ -15,6 +15,5 @@ Controllers.controller('Controller', ['$scope', %s, function($scope, %s) {
         newItem.$save(function (err) {
             $scope.%s = %s.query();
         });
-	
     };    
 }]);
